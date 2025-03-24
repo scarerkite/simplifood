@@ -1,5 +1,16 @@
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe Equipment, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  let(:equipment) { build(:equipment) }
+
+  describe "validations" do
+    it "is valid with valid attributes" do
+      expect(equipment).to be_valid
+    end
+
+    it "is invalid without a name" do
+      equipment.name = nil
+      expect(equipment).to_not be_valid
+    end
+  end
 end

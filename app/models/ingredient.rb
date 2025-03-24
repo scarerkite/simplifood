@@ -4,7 +4,7 @@ class Ingredient < ApplicationRecord
   has_many :step_ingredients
   has_many :steps, through: :step_ingredients
 
-  enum category: {
+  enum :category, {
     meat: 0,
     poultry: 1,
     seafood: 2,
@@ -22,7 +22,7 @@ class Ingredient < ApplicationRecord
     sweetener: 14,
     condiment: 15,
     other: 16
-  }, _default: :other
+  }, default: :other
 
   validates :name, presence: true, uniqueness: true
 end
