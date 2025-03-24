@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :step_ingredient do
-    step { nil }
-    ingredient { nil }
+    step
+    ingredient
     optional { false }
   end
 end
