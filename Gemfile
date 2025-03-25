@@ -50,7 +50,7 @@ group :development, :test do
   gem "byebug", platforms: [ :mri, :mingw, :x64_mingw ]
 
   # Testing framework
-  gem "rspec-rails", "~> 6.1"
+  gem "rspec-rails", "~> 7.1"
   gem "factory_bot_rails", "~> 6.4"
 
   # Environment variables management
