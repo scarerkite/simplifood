@@ -50,7 +50,7 @@ group :development, :test do
   gem "factory_bot_rails", "~> 6.4"
 
   # Environment variables management
-  gem "dotenv-rails", "~> 2.8"
+  gem "dotenv-rails", "~> 3.1"
 
   # Omakase Ruby styling
   gem "rubocop-rails-omakase", require: false
