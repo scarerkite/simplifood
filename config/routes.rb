@@ -7,4 +7,9 @@ Rails.application.routes.draw do
       resources :recipes, only: [ :index, :show ]
     end
   end
+
+  # Client-side routing fallback
+  get "*path", to: "home#index", constraints: ->(request) do
+    !request.xhr? && request.format.html?
+  end
 end

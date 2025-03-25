@@ -44,6 +44,8 @@ gem "active_model_serializers", "~> 0.10.13"
 gem "jsbundling-rails"
 gem "sprockets-rails"
 
+gem "tailwindcss-rails"
+
 group :development, :test do
   # Debugging tools
   gem "pry-rails", "~> 0.3.9"
