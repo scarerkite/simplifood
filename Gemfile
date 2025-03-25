@@ -40,6 +40,10 @@ gem "rack-cors", "~> 2.0"
 ## API serialization
 gem "active_model_serializers", "~> 0.10.13"
 
+# Adding React
+gem "jsbundling-rails"
+gem "sprockets-rails"
+
 group :development, :test do
   # Debugging tools
   gem "pry-rails", "~> 0.3.9"
@@ -60,4 +64,11 @@ group :development, :test do
 
   # Auto-generate ERD
   gem "rails-erd"
+
+  gem "foreman", "~> 0.88.1"
+end
+
+group :test do
+  gem "capybara"
+  gem "selenium-webdriver", "~> 4.11"
 end
